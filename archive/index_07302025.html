@@ -205,6 +205,28 @@
             text-decoration: underline;
         }
 
+        .education-section {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item h3 {
+            color: #667eea;
+            font-size: 1.2rem;
+        }
+
+        .education-item p {
+            color: #666;
+            margin-top: 5px;
+        }
+
         footer {
             background: #333;
             color: white;
@@ -258,11 +280,91 @@
                 <h2>Software Engineer</h2>
                 <p>Passionate about building scalable systems, cloud technologies, and machine learning. Currently Tech Lead for Cloud Service Mesh at Google.</p>
                 <div>
+                    <a href="#experience" class="btn">View Experience</a>
                     <a href="#contact" class="btn">Contact Me</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Senior Software Engineer</div>
+                        <div class="job-company">Google</div>
+                    </div>
+                    <div class="job-duration">Aug 2020 - Present</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Tech Lead for Cloud Service Mesh</li>
+                        <li>GDC ML Lifecycle Management lead</li>
+                        <li>Led integration of ASM with Google CAS and contributed to several migration pipelines</li>
+                        <li>Security Maintainer of the Open Source Istio Project - Service Mesh on Kubernetes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Technical Lead</div>
+                        <div class="job-company">Cisco Systems</div>
+                    </div>
+                    <div class="job-duration">Aug 2017 – July 2020</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Led a team with three direct reports and two dotted-line reports</li>
+                        <li>Re-architected data export from per-tenant monitoring instances to multi-tenant multi-cloud services (~50GB/day per client)</li>
+                        <li>Led design and implementation of machine learning use cases using Spark on network telemetry data</li>
+                        <li>Built analytics platform on AWS to demonstrate business impact of SD-WAN migration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Member of Technical Staff</div>
+                        <div class="job-company">vIPtela (Acquired by Cisco)</div>
+                    </div>
+                    <div class="job-duration">June 2014 – July 2017</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Early member of Sequoia Funded vIPtela engineering team</li>
+                        <li>Integrated Intel-DPDK to port packet forwarding functionality from MIPS to X86</li>
+                        <li>Added support for IPv6 forwarding and IPv6 Neighbor discovery (RFC 4861)</li>
+                        <li>Designed TCP-optimization and forward error correction (FEC) for improved WAN performance</li>
+                        <li>Developed libraries and tools for exporting statistics data to centralized monitoring service</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Senior Software Engineer</div>
+                        <div class="job-company">Brocade Communication Systems</div>
+                    </div>
+                    <div class="job-duration">June 2010 – May 2014</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Developed support for Bidirectional PIM (RFC 5015) as member of IP multicast team</li>
+                        <li>Designed and implemented multicast forwarding resource library for next-gen platform</li>
+                        <li>Improved IP Multicast scalability: 100% increase in forwarding entries and OILs, 400% increase in PIM interfaces</li>
+                        <li>Developed tools to assess software scaling performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="skills" class="section" style="background: #f8f9fa;">
         <div class="container">
@@ -305,10 +407,50 @@
         </div>
     </section>
 
-    <section id="latest-thoughts" class="section" style="background: #fff; text-align: center;">
+    <section id="projects" class="section">
         <div class="container">
-            <h2>Latest Thoughts</h2>
-            <p>Follow my latest thoughts on tech and my projects at <a href="https://shankarganesan.substack.com/" target="_blank" style="color: #667eea; text-decoration: none; font-weight: bold;">Substack</a>.</p>
+            <h2 class="section-title">Projects & Publications</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>AI-Assisted Troubleshooting Agent</h3>
+                    <p>Developing an intelligent agent for AI-assisted troubleshooting on Google Cloud Platform, leveraging machine learning to improve customer support efficiency.</p>
+                </div>
+                <div class="project-card">
+                    <h3>LangChain + Gemini Support Tool</h3>
+                    <p>Built a helper tool using LangChain and Gemini to help on-call engineers mine relevant information from chats, bugs, and open source documents for faster customer escalation responses.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Real-time Face Recognition</h3>
+                    <p>Developed an application for real-time face recognition by training on provided datasets.</p>
+                    <a href="https://github.com/sadmoseby/sample_face_recognition" class="project-link" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Research Publication</h3>
+                    <p><strong>"The Saturation Throughput Region of p-Persistent CSMA"</strong><br>
+                    By Yi Gai, Shankar Ganesan, Bhaskar Krishnamachari<br>
+                    Information Theory and Applications Workshop (ITA), UCSD, 2011</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-section">
+                <div class="education-item">
+                    <h3>M.S. Computer Science Engineering</h3>
+                    <p>University of Southern California • May 2010</p>
+                </div>
+                <div class="education-item">
+                    <h3>B. Tech Electronics and Communication Engineering</h3>
+                    <p>National Institute of Technology, Tiruchirappalli • May 2008</p>
+                </div>
+                <div class="education-item">
+                    <h3>Deep Learning Nanodegree</h3>
+                    <p>Udacity • <a href="https://graduation.udacity.com/confirm/AHMDDFZG" target="_blank" class="project-link">Certificate</a></p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -320,7 +462,6 @@
                 <a href="mailto:gshankar.87@gmail.com">Email</a>
                 <a href="https://www.linkedin.com/in/shankar-ganesan-653226a" target="_blank">LinkedIn</a>
                 <a href="https://github.com/shankarg87" target="_blank">GitHub</a>
-                <a href="https://shankarganesan.substack.com/" target="_blank">Substack</a>
             </div>
             <p style="margin-top: 30px; opacity: 0.7;">&copy; 2024 Shankar Ganesan. All rights reserved.</p>
         </div>
